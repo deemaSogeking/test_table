@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Таблица</title>
+  </head>
+  <body>
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>Показатель</th>
+            <th class="current press">Текущий день</th>
+            <th colspan="2" class="evening press">Вчера</th>
+            <th class="day__week press">Этот день недели</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="indicators">Выручка, руб</td>
+            <td class="current">500 521</td>
+            <td colspan="2">480 521 <span class="percent red">-4%</span></td>
+            <td>480 521</td>
+          </tr>
+          <tr class="chart">
+            <td colspan="5"><img class="chart__one" src="1.png" alt="" /></td>
+          </tr>
+          <tr>
+            <td class="indicators">Наличные</td>
+            <td class="current">300 000</td>
+            <td colspan="2">300 000 <span class="percent red">-3%</span></td>
+            <td>300 000</td>
+          </tr>
+          <tr>
+            <td class="indicators">Безналичный расчет</td>
+            <td class="current">100 000</td>
+            <td colspan="2">100 000 <span class="percent red">-3%</span></td>
+            <td>100 000</td>
+          </tr>
+          <tr>
+            <td class="indicators">Кредитные карты</td>
+            <td class="current">100 521</td>
+            <td colspan="2">100 521 <span class="percent red">-3%</span></td>
+            <td>100 521</td>
+          </tr>
+          <tr>
+            <td class="indicators">Средний чек, руб</td>
+            <td class="current">1 300</td>
+            <td colspan="2" class="pos">
+              900 <span class="percent green positive">+44%</span>
+            </td>
+            <td class="pos">900</td>
+          </tr>
+          <tr>
+            <td class="indicators">Средний гость, руб</td>
+            <td class="current">1 200</td>
+            <td colspan="2" class="pos">
+              800 <span class="percent green pos">+45%</span>
+            </td>
+            <td class="pos">800</td>
+          </tr>
+          <tr>
+            <td class="indicators">
+              Удаление из чека <br />(после оплаты), руб
+            </td>
+            <td class="current">1 000</td>
+            <td colspan="2" class="neg">
+              1 100 <span class="percent red neg">-10%</span>
+            </td>
+            <td class="pos">900</td>
+          </tr>
+          <tr>
+            <td class="indicators">Удаление из счета <br />(до оплаты), руб</td>
+            <td class="current">1 300</td>
+            <td colspan="2">1 300 <span class="percent red">-7%</span></td>
+            <td class="pos">900</td>
+          </tr>
+          <tr>
+            <td class="indicators">Количество чеков</td>
+            <td class="current">34</td>
+            <td colspan="2">36 <span class="percent red">-5%</span></td>
+            <td>34</td>
+          </tr>
+          <tr>
+            <td class="indicators">Количество гостей</td>
+            <td class="current">34</td>
+            <td colspan="2">36 <span class="percent red">-5%</span></td>
+            <td>32</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="developer">
+      <p class="developer__text">
+        Developer:
+        <a
+          class="developer__link"
+          href="https://github.com/deemaSogeking"
+          target="_blank"
+        >
+          Dmitry Pulyaev
+        </a>
+      </p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
